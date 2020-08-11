@@ -1,5 +1,6 @@
-from selenium import webdriver
 import unittest
+from selenium import webdriver
+
 
 class GoogleSearchTests(unittest.TestCase):
 
@@ -16,7 +17,7 @@ class GoogleSearchTests(unittest.TestCase):
 
     def test_Search_MicrosoftCompany(self):
         self.driver.get("https://google.com")
-        self.driver.find_element_by_name("q").send_keys("Google Company")
+        self.driver.find_element_by_name("q").send_keys("Microsoft Company")
         self.driver.find_element_by_name("btnK").click()
 
     @classmethod
@@ -24,3 +25,7 @@ class GoogleSearchTests(unittest.TestCase):
         cls.driver.close()
         cls.driver.quit()
         print("The Test has been completed...")
+
+
+if __name__ == '__main__':
+    unittest.main()
