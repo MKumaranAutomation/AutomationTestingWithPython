@@ -6,7 +6,7 @@ class GoogleSearchTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome('../Drivers/chromedriver')
+        cls.driver = webdriver.Chrome(executable_path=r"/Volumes/D Drive/TopTechGurus/Trainings/GoogleTests/AutomationTestingWithPython/Drivers/chromedriver")
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
