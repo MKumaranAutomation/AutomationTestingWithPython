@@ -14,6 +14,7 @@ class GoogleSearchTest(unittest.TestCase):
         self.driver.get("https://google.com")
         self.driver.find_element_by_name("q").send_keys("Google Company")
         self.driver.find_element_by_name("btnK").click()
+        assertEqual("Tutorialspoint", "Tutorialspoint")
 
     def test_Search_MicrosoftCompany(self):
         self.driver.get("https://google.com")
