@@ -2,11 +2,11 @@ import unittest
 from selenium import webdriver
 
 
-class GoogleSearchTests(unittest.TestCase):
+class GoogleSearchTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome('../Drivers/chromedriver.exe')
+        cls.driver = webdriver.Chrome('../Drivers/chromedriver')
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
